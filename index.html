@@ -263,42 +263,44 @@ Ver Menú Completo
 </section>
 <!-- Catálogo de Productos -->
 <section id="menu" class="py-16">
-<div class="container mx-auto px-4">
-<div class="text-center mb-12">
-<h2 class="text-3xl font-bold text-gray-800 mb-2">Nuestra Carta</h2>
-<p class="text-gray-600 max-w-2xl mx-auto">Descubre nuestra variedad de platos preparados con los mejores ingredientes y recetas tradicionales</p>
-</div>
-<!-- Categorías Tabs -->
-<div class="flex flex-wrap justify-center mb-8 border-b border-gray-200">
-<button class="category-tab px-6 py-3 text-gray-500 font-medium border-b-2 border-transparent" data-category="acompanantes">
-Acompañantes
-</button>
-<button class="category-tab px-6 py-3 text-gray-500 font-medium border-b-2 border-transparent" data-category="bocadillos">
-Bocadillos
-</button>
-<button class="category-tab px-6 py-3 text-gray-500 font-medium border-b-2 border-transparent" data-category="entrantes">
-Entrantes
-</button>
-<button class="category-tab px-6 py-3 text-gray-500 font-medium border-b-2 border-transparent" data-category="hamburguesas">
-Hamburguesas
-</button>
-<button class="category-tab px-6 py-3 text-gray-500 font-medium border-b-2 border-transparent" data-category="kebabs">
-Kebabs
-</button>
-<button class="category-tab px-6 py-3 text-primary font-medium border-b-2 border-primary" data-category="pizzas">
-Pizzas
-</button>
-<button class="category-tab px-6 py-3 text-gray-500 font-medium border-b-2 border-transparent" data-category="perritos">
-Perritos Calientes
-</button>
-<button class="category-tab px-6 py-3 text-gray-500 font-medium border-b-2 border-transparent" data-category="sandwiches">
-Sandwiches
-</button>
-</div>
-<!-- Productos Grid -->
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-<!-- Acompañantes -->
-<div class="col-span-full bg-white rounded-lg shadow-md overflow-hidden product-card" data-category="acompanantes">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-800 mb-2">Nuestra Carta</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Descubre nuestra variedad de platos preparados con los mejores ingredientes y recetas tradicionales</p>
+    </div>
+    
+    <!-- Categorías Tabs -->
+    <div class="flex flex-wrap justify-center mb-8 border-b border-gray-200">
+      <button class="category-tab px-6 py-3 text-gray-500 font-medium border-b-2 border-transparent hover:text-primary transition-colors" data-category="acompanantes">
+        Acompañantes
+      </button>
+      <button class="category-tab px-6 py-3 text-gray-500 font-medium border-b-2 border-transparent hover:text-primary transition-colors" data-category="bocadillos">
+        Bocadillos
+      </button>
+      <button class="category-tab px-6 py-3 text-gray-500 font-medium border-b-2 border-transparent hover:text-primary transition-colors" data-category="entrantes">
+        Entrantes
+      </button>
+      <button class="category-tab px-6 py-3 text-gray-500 font-medium border-b-2 border-transparent hover:text-primary transition-colors" data-category="hamburguesas">
+        Hamburguesas
+      </button>
+      <button class="category-tab px-6 py-3 text-gray-500 font-medium border-b-2 border-transparent hover:text-primary transition-colors" data-category="kebabs">
+        Kebabs
+      </button>
+      <button class="category-tab px-6 py-3 text-primary font-medium border-b-2 border-primary hover:text-primary-dark transition-colors" data-category="pizzas">
+        Pizzas
+      </button>
+      <button class="category-tab px-6 py-3 text-gray-500 font-medium border-b-2 border-transparent hover:text-primary transition-colors" data-category="perritos">
+        Perritos Calientes
+      </button>
+      <button class="category-tab px-6 py-3 text-gray-500 font-medium border-b-2 border-transparent hover:text-primary transition-colors" data-category="sandwiches">
+        Sandwiches
+      </button>
+    </div>
+    
+    <!-- Productos Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <!-- Acompañantes -->
+      <div class="col-span-full bg-white rounded-lg shadow-md overflow-hidden product-card" data-category="acompanantes">
 <img src="https://readdy.ai/api/search-image?query=A%20beautiful%20collage%20of%20various%20side%20dishes%20including%20nachos%2C%20french%20fries%2C%20onion%20rings%2C%20chicken%20wings%2C%20and%20salads%20arranged%20on%20a%20rustic%20wooden%20table.%20The%20scene%20shows%20different%20textures%20and%20colors%20of%20appetizers%20with%20professional%20lighting%20and%20styling.%20Each%20dish%20is%20perfectly%20presented%20with%20garnishes%20and%20sauces&width=1200&height=400&seq=acc_hero&orientation=landscape" alt="Nuestros Acompañantes" class="w-full h-64 object-cover object-top">
 <div class="p-8">
 <h3 class="text-3xl font-semibold text-gray-800 mb-8">Acompañantes</h3>
@@ -421,9 +423,9 @@ Sandwiches
 </div>
 </div>
 <div class="flex justify-between items-start">
-<div>
-<!-- Bocadillos -->
-<div class="col-span-full bg-white rounded-lg shadow-md overflow-hidden product-card" data-category="bocadillos">
+ </div>
+      <!-- Bocadillos -->
+      <div class="col-span-full bg-white rounded-lg shadow-md overflow-hidden product-card hidden" data-category="bocadillos">
 <img src="https://readdy.ai/api/search-image?query=A%20beautiful%20display%20of%20various%20Spanish%20sandwiches%20%28bocadillos%29%20arranged%20on%20a%20rustic%20wooden%20table.%20The%20scene%20shows%20both%20hot%20and%20cold%20sandwiches%20with%20fresh%20ingredients%2C%20meats%2C%20and%20vegetables.%20Professional%20food%20photography%20with%20warm%20lighting%20highlighting%20the%20textures%20of%20the%20bread%20and%20fillings&width=1200&height=400&seq=boc_hero&orientation=landscape" alt="Nuestros Bocadillos" class="w-full h-64 object-cover object-top">
 <div class="p-6">
 <div class="grid md:grid-cols-2 gap-8">
@@ -508,8 +510,8 @@ Sandwiches
 </div>
 </div>
 </div>
-<!-- Perritos Calientes -->
-<div class="col-span-full bg-white rounded-lg shadow-md overflow-hidden product-card" data-category="perritos">
+ <!-- Perritos Calientes -->
+      <div class="col-span-full bg-white rounded-lg shadow-md overflow-hidden product-card hidden" data-category="perritos">
 <img src="https://readdy.ai/api/search-image?query=Gourmet%20hot%20dogs%20with%20various%20toppings%20including%20melted%20cheese%2C%20caramelized%20onions%2C%20and%20special%20sauces%2C%20arranged%20on%20a%20rustic%20wooden%20serving%20board.%20The%20hot%20dogs%20look%20perfectly%20grilled%20with%20golden%20buns.%20Professional%20food%20photography%20with%20warm%20lighting%20highlighting%20the%20textures&width=1200&height=400&seq=hot_hero&orientation=landscape" alt="Nuestros Perritos Calientes" class="w-full h-64 object-cover object-top">
 <div class="p-6">
 <h3 class="text-2xl font-semibold text-gray-800 mb-6">Perritos Calientes</h3>
@@ -533,8 +535,8 @@ Sandwiches
 </div>
 </div>
 </div>
-<!-- Sandwiches -->
-<div class="col-span-full bg-white rounded-lg shadow-md overflow-hidden product-card" data-category="sandwiches">
+ <!-- Sandwiches -->
+      <div class="col-span-full bg-white rounded-lg shadow-md overflow-hidden product-card hidden" data-category="sandwiches">
 <img src="https://readdy.ai/api/search-image?query=A%20variety%20of%20gourmet%20sandwiches%20cut%20diagonally%20and%20arranged%20on%20a%20wooden%20board%2C%20showing%20different%20fillings%20including%20tuna%2C%20ham%2C%20cheese%2C%20and%20fresh%20vegetables.%20The%20sandwiches%20look%20fresh%20and%20appetizing%20with%20quality%20ingredients.%20Professional%20food%20photography%20with%20natural%20lighting&width=1200&height=400&seq=sand_hero&orientation=landscape" alt="Nuestros Sandwiches" class="w-full h-64 object-cover object-top">
 <div class="p-6">
 <h3 class="text-2xl font-semibold text-gray-800 mb-6">Sándwiches</h3>
@@ -584,7 +586,7 @@ Sandwiches
 </div>
 </div>
 <!-- Pizzas -->
-<div class="col-span-full bg-white rounded-lg shadow-md overflow-hidden product-card" data-category="pizzas">
+      <div class="col-span-full bg-white rounded-lg shadow-md overflow-hidden product-card" data-category="pizzas">
 <img src="https://readdy.ai/api/search-image?query=A%20beautiful%20artisanal%20pizza%20being%20prepared%20in%20a%20traditional%20wood-fired%20oven.%20The%20scene%20shows%20a%20rustic%20kitchen%20with%20warm%20lighting%2C%20fresh%20ingredients%2C%20and%20the%20pizza%20maker%20crafting%20the%20perfect%20pizza.%20Professional%20food%20photography%20with%20dramatic%20lighting&width=1200&height=400&seq=piz_hero&orientation=landscape" alt="Nuestras Pizzas" class="w-full h-64 object-cover object-top">
 <div class="p-6">
 <h3 class="text-2xl font-semibold text-gray-800 mb-6">Nuestras Pizzas</h3>
@@ -623,9 +625,8 @@ Sandwiches
 </div>
 </div>
 </div>
-</div>
-<!-- Hamburguesas -->
-<div class="col-span-full bg-white rounded-lg shadow-md overflow-hidden product-card" data-category="hamburguesas">
+ <!-- Hamburguesas -->
+      <div class="col-span-full bg-white rounded-lg shadow-md overflow-hidden product-card hidden" data-category="hamburguesas">
 <img src="https://readdy.ai/api/search-image?query=A%20variety%20of%20gourmet%20burgers%20with%20different%20toppings%2C%20both%20beef%20and%20chicken%20options%2C%20displayed%20on%20a%20rustic%20wooden%20table.%20The%20scene%20shows%20fresh%20ingredients%2C%20melted%20cheese%2C%20and%20crisp%20vegetables.%20Professional%20food%20photography%20with%20warm%20lighting&width=1200&height=400&seq=ham_hero&orientation=landscape" alt="Nuestras Hamburguesas" class="w-full h-64 object-cover object-top">
 <div class="p-6">
 <h3 class="text-2xl font-semibold text-gray-800 mb-4">Hamburguesas</h3>
@@ -663,8 +664,8 @@ Sandwiches
 </div>
 </div>
 </div>
-<!-- Kebabs -->
-<div class="col-span-full bg-white rounded-lg shadow-md overflow-hidden product-card" data-category="kebabs">
+  <!-- Kebabs -->
+      <div class="col-span-full bg-white rounded-lg shadow-md overflow-hidden product-card hidden" data-category="kebabs">
 <img src="https://readdy.ai/api/search-image?query=A%20professional%20food%20photography%20collage%20showing%20two%20types%20of%20kebabs%20side%20by%20side.%20On%20the%20left%2C%20a%20perfectly%20wrapped%20durum%20kebab%20with%20grilled%20meat%20and%20fresh%20vegetables.%20On%20the%20right%2C%20an%20open%20pita%20bread%20kebab%20filled%20with%20meat%2C%20fresh%20vegetables%20and%20sauce.%20Both%20presented%20on%20rustic%20wooden%20boards%20with%20garnishes.%20The%20lighting%20is%20warm%20and%20inviting%2C%20highlighting%20the%20textures%20and%20colors%20of%20the%20ingredients&width=1200&height=400&seq=keb_hero&orientation=landscape" alt="Nuestros Kebabs" class="w-full h-64 object-cover object-top">
 <div class="p-6">
 <h3 class="text-2xl font-semibold text-gray-800 mb-4">Kebab</h3>
@@ -929,6 +930,46 @@ document.addEventListener('DOMContentLoaded', () => {
   // Capitaliza la primera letra del mes
   const mesCapital = monthName.charAt(0).toUpperCase() + monthName.slice(1);
   el.textContent = `Actualizado: ${day} de ${mesCapital}, ${year}`;
+});
+</script>
+        <script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Obtener todos los tabs y cards
+  const tabs = document.querySelectorAll('.category-tab');
+  const productCards = document.querySelectorAll('.product-card');
+  
+  // Mostrar solo la categoría activa (pizzas por defecto)
+  function showCategory(category) {
+    productCards.forEach(card => {
+      if (card.dataset.category === category) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+    
+    // Actualizar estado activo de los tabs
+    tabs.forEach(tab => {
+      if (tab.dataset.category === category) {
+        tab.classList.add('text-primary', 'border-primary');
+        tab.classList.remove('text-gray-500', 'border-transparent');
+      } else {
+        tab.classList.remove('text-primary', 'border-primary');
+        tab.classList.add('text-gray-500', 'border-transparent');
+      }
+    });
+  }
+  
+  // Manejar clic en los tabs
+  tabs.forEach(tab => {
+    tab.addEventListener('click', function() {
+      const category = this.dataset.category;
+      showCategory(category);
+    });
+  });
+  
+  // Mostrar pizzas por defecto (ya que es la pestaña activa inicialmente)
+  showCategory('pizzas');
 });
 </script>
 </body>
