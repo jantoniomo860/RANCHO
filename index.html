@@ -203,6 +203,7 @@ border: none;
 </button>
 </div>
 </div>
+</div>
 <!-- Menú Móvil Desplegable -->
 <nav id="mobileMenu" class="hidden md:hidden py-4 space-y-3">
 <a href="#inicio" class="block text-gray-700 hover:text-primary font-medium py-2 transition-colors">Inicio</a>
@@ -224,7 +225,6 @@ border: none;
 <span class="text-gray-700 text-sm">en sabor</span>
 </div>
 </nav>
-</div>
 </header>
 <!-- Hero Section -->
 <section id="inicio" class="relative h-[500px] md:h-[600px] overflow-hidden" style="background-image: url('https://static.readdy.ai/image/e807f5ae4491ddd29d257a0cfd0abef5/ded3c05a99a5e0dca40f50ecb28361c4.png'); background-size: cover; background-position: center;">
@@ -277,9 +277,6 @@ Ver Menú Completo
       <button class="category-tab px-6 py-3 text-gray-500 font-medium border-b-2 border-transparent hover:text-primary transition-colors" data-category="bocadillos">
         Bocadillos
       </button>
-      <button class="category-tab px-6 py-3 text-gray-500 font-medium border-b-2 border-transparent hover:text-primary transition-colors" data-category="entrantes">
-        Entrantes
-      </button>
       <button class="category-tab px-6 py-3 text-gray-500 font-medium border-b-2 border-transparent hover:text-primary transition-colors" data-category="hamburguesas">
         Hamburguesas
       </button>
@@ -296,134 +293,140 @@ Ver Menú Completo
         Sandwiches
       </button>
     </div>
-    
     <!-- Productos Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-      <!-- Acompañantes -->
-      <div class="col-span-full bg-white rounded-lg shadow-md overflow-hidden product-card" data-category="acompanantes">
-<img src="https://readdy.ai/api/search-image?query=A%20beautiful%20collage%20of%20various%20side%20dishes%20including%20nachos%2C%20french%20fries%2C%20onion%20rings%2C%20chicken%20wings%2C%20and%20salads%20arranged%20on%20a%20rustic%20wooden%20table.%20The%20scene%20shows%20different%20textures%20and%20colors%20of%20appetizers%20with%20professional%20lighting%20and%20styling.%20Each%20dish%20is%20perfectly%20presented%20with%20garnishes%20and%20sauces&width=1200&height=400&seq=acc_hero&orientation=landscape" alt="Nuestros Acompañantes" class="w-full h-64 object-cover object-top">
-<div class="p-8">
-<h3 class="text-3xl font-semibold text-gray-800 mb-8">Acompañantes</h3>
-<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-<div class="space-y-8">
-<div class="bg-gray-50 rounded-lg p-6">
-<h4 class="text-xl font-semibold text-gray-800 mb-4">Nachos y Ensaladas</h4>
-<div class="space-y-4">
-<div class="flex justify-between items-start">
-<div>
-<p class="font-medium text-gray-800">Ración de Nachos</p>
-<p class="text-sm text-gray-600">Normal / Grande</p>
-</div>
-<p class="font-semibold text-primary">4,00 € / 5,00 €</p>
-</div>
-<div class="flex justify-between items-start">
-<div>
-<p class="font-medium text-gray-800">Ensalada Mixta</p>
-</div>
-<p class="font-semibold text-primary">5,00 €</p>
-</div>
-</div>
-</div>
-<div class="bg-gray-50 rounded-lg p-6">
-<h4 class="text-xl font-semibold text-gray-800 mb-4">Patatas</h4>
-<div class="space-y-4">
-<div class="flex justify-between items-start">
-<div>
-<p class="font-medium text-gray-800">Patatas Gratinadas</p>
-<p class="text-sm text-gray-600">Normal / Grande</p>
-</div>
-<p class="font-semibold text-primary">5,00 € / 6,00 €</p>
-</div>
-<div class="flex justify-between items-start">
-<div>
-<p class="font-medium text-gray-800">Patatas Fritas</p>
-<p class="text-sm text-gray-600">Normal / Grande</p>
-</div>
-<p class="font-semibold text-primary">4,00 € / 4,50 €</p>
-</div>
-</div>
-</div>
-</div>
-<div class="space-y-8">
-<div class="bg-gray-50 rounded-lg p-6">
-<h4 class="text-xl font-semibold text-gray-800 mb-4">Especialidades de Pollo</h4>
-<div class="space-y-4">
-<div class="flex justify-between items-start">
-<div>
-<p class="font-medium text-gray-800">Bola Crocanti</p>
-<p class="text-sm text-gray-600">15 unidades</p>
-</div>
-<p class="font-semibold text-primary">4,00 €</p>
-</div>
-<div class="flex justify-between items-start">
-<div>
-<p class="font-medium text-gray-800">Alitas de Pollo</p>
-<p class="text-sm text-gray-600">4 uds / 8 uds</p>
-</div>
-<p class="font-semibold text-primary">4,50 € / 8,50 €</p>
-</div>
-<div class="flex justify-between items-start">
-<div>
-<p class="font-medium text-gray-800">Nuggets de Pollo</p>
-</div>
-<p class="font-semibold text-primary">3,50 €</p>
-</div>
-</div>
-</div>
-</div>
-<div class="space-y-8">
-<div class="bg-gray-50 rounded-lg p-6">
-<h4 class="text-xl font-semibold text-gray-800 mb-4">Complementos</h4>
-<div class="space-y-4">
-<div class="flex justify-between items-start">
-<div>
-<p class="font-medium text-gray-800">Jalapeños</p>
-<p class="text-sm text-gray-600">6 uds / 9 uds</p>
-</div>
-<p class="font-semibold text-primary">3,50 € / 4,50 €</p>
-</div>
-<div class="flex justify-between items-start">
-<div>
-<p class="font-medium text-gray-800">Queso</p>
-<p class="text-sm text-gray-600">6 uds / 9 uds</p>
-</div>
-<p class="font-semibold text-primary">3,50 € / 4,50 €</p>
-</div>
-<div class="flex justify-between items-start">
-<div>
-<p class="font-medium text-gray-800">Aros de Cebolla</p>
-<p class="text-sm text-gray-600">6 unidades</p>
-</div>
-<p class="font-semibold text-primary">3,50 €</p>
-</div>
-</div>
-</div>
-</div>
-<div class="space-y-8">
-<div class="bg-gray-50 rounded-lg p-6">
-<h4 class="text-xl font-semibold text-gray-800 mb-4">Especialidades</h4>
-<div class="space-y-4">
-<div class="flex justify-between items-start">
-<div>
-<p class="font-medium text-gray-800">Cajun</p>
-<p class="text-sm text-gray-600">7 tiras de pechuga con sazonado Cajun</p>
-</div>
-<p class="font-semibold text-primary">5,00 €</p>
-</div>
-<div class="flex justify-between items-start">
-<div>
-<p class="font-medium text-gray-800">Kentaki</p>
-<p class="text-sm text-gray-600">8 solomillos de pollo estilo Kentucky</p>
-</div>
-<p class="font-semibold text-primary">6,00 €</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="flex justify-between items-start">
- </div>
+ <!-- Productos Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="product-grid">
+ <!-- Acompañantes -->
+<div class="col-span-full bg-white rounded-lg shadow-md overflow-hidden product-card" data-category="acompanantes">
+  <img src="https://readdy.ai/api/search-image?query=A%20beautiful%20collage%20of%20various%20side%20dishes%20including%20nachos%2C%20french%20fries%2C%20onion%20rings%2C%20chicken%20wings%2C%20and%20salads%20arranged%20on%20a%20rustic%20wooden%20table.%20The%20scene%20shows%20different%20textures%20and%20colors%20of%20appetizers%20with%20professional%20lighting%20and%20styling.%20Each%20dish%20is%20perfectly%20presented%20with%20garnishes%20and%20sauces&width=1200&height=400&seq=acc_hero&orientation=landscape" alt="Nuestros Acompañantes" class="w-full h-64 object-cover object-top">
+  <div class="p-8">
+    <h3 class="text-3xl font-semibold text-gray-800 mb-8">Acompañantes</h3>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+      
+      <!-- Columna 1 -->
+      <div class="space-y-8">
+        <div class="bg-gray-50 rounded-lg p-6">
+          <h4 class="text-xl font-semibold text-gray-800 mb-4">Nachos y Ensaladas</h4>
+          <div class="space-y-4">
+            <div class="flex justify-between items-start">
+              <div>
+                <p class="font-medium text-gray-800">Ración de Nachos</p>
+                <p class="text-sm text-gray-600">Normal / Grande</p>
+              </div>
+              <p class="font-semibold text-primary">4,00 € / 5,00 €</p>
+            </div>
+            <div class="flex justify-between items-start">
+              <div>
+                <p class="font-medium text-gray-800">Ensalada Mixta</p>
+              </div>
+              <p class="font-semibold text-primary">5,00 €</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-gray-50 rounded-lg p-6">
+          <h4 class="text-xl font-semibold text-gray-800 mb-4">Patatas</h4>
+          <div class="space-y-4">
+            <div class="flex justify-between items-start">
+              <div>
+                <p class="font-medium text-gray-800">Patatas Gratinadas</p>
+                <p class="text-sm text-gray-600">Normal / Grande</p>
+              </div>
+              <p class="font-semibold text-primary">5,00 € / 6,00 €</p>
+            </div>
+            <div class="flex justify-between items-start">
+              <div>
+                <p class="font-medium text-gray-800">Patatas Fritas</p>
+                <p class="text-sm text-gray-600">Normal / Grande</p>
+              </div>
+              <p class="font-semibold text-primary">4,00 € / 4,50 €</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Columna 2 -->
+      <div class="space-y-8">
+        <div class="bg-gray-50 rounded-lg p-6">
+          <h4 class="text-xl font-semibold text-gray-800 mb-4">Especialidades de Pollo</h4>
+          <div class="space-y-4">
+            <div class="flex justify-between items-start">
+              <div>
+                <p class="font-medium text-gray-800">Bola Crocanti</p>
+                <p class="text-sm text-gray-600">15 unidades</p>
+              </div>
+              <p class="font-semibold text-primary">4,00 €</p>
+            </div>
+            <div class="flex justify-between items-start">
+              <div>
+                <p class="font-medium text-gray-800">Alitas de Pollo</p>
+                <p class="text-sm text-gray-600">4 uds / 8 uds</p>
+              </div>
+              <p class="font-semibold text-primary">4,50 € / 8,50 €</p>
+            </div>
+            <div class="flex justify-between items-start">
+              <div>
+                <p class="font-medium text-gray-800">Nuggets de Pollo</p>
+              </div>
+              <p class="font-semibold text-primary">3,50 €</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Columna 3 -->
+      <div class="space-y-8">
+        <div class="bg-gray-50 rounded-lg p-6">
+          <h4 class="text-xl font-semibold text-gray-800 mb-4">Complementos</h4>
+          <div class="space-y-4">
+            <div class="flex justify-between items-start">
+              <div>
+                <p class="font-medium text-gray-800">Jalapeños</p>
+                <p class="text-sm text-gray-600">6 uds / 9 uds</p>
+              </div>
+              <p class="font-semibold text-primary">3,50 € / 4,50 €</p>
+            </div>
+            <div class="flex justify-between items-start">
+              <div>
+                <p class="font-medium text-gray-800">Queso</p>
+                <p class="text-sm text-gray-600">6 uds / 9 uds</p>
+              </div>
+              <p class="font-semibold text-primary">3,50 € / 4,50 €</p>
+            </div>
+            <div class="flex justify-between items-start">
+              <div>
+                <p class="font-medium text-gray-800">Aros de Cebolla</p>
+                <p class="text-sm text-gray-600">6 unidades</p>
+              </div>
+              <p class="font-semibold text-primary">3,50 €</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-gray-50 rounded-lg p-6">
+          <h4 class="text-xl font-semibold text-gray-800 mb-4">Especialidades</h4>
+          <div class="space-y-4">
+            <div class="flex justify-between items-start">
+              <div>
+                <p class="font-medium text-gray-800">Cajun</p>
+                <p class="text-sm text-gray-600">7 tiras de pechuga con sazonado Cajun</p>
+              </div>
+              <p class="font-semibold text-primary">5,00 €</p>
+            </div>
+            <div class="flex justify-between items-start">
+              <div>
+                <p class="font-medium text-gray-800">Kentaki</p>
+                <p class="text-sm text-gray-600">8 solomillos de pollo estilo Kentucky</p>
+              </div>
+              <p class="font-semibold text-primary">6,00 €</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div> <!-- Cierra grid -->
+  </div> <!-- Cierra p-8 -->
+</div> <!-- Cierra product-card -->
       <!-- Bocadillos -->
       <div class="col-span-full bg-white rounded-lg shadow-md overflow-hidden product-card hidden" data-category="bocadillos">
 <img src="https://readdy.ai/api/search-image?query=A%20beautiful%20display%20of%20various%20Spanish%20sandwiches%20%28bocadillos%29%20arranged%20on%20a%20rustic%20wooden%20table.%20The%20scene%20shows%20both%20hot%20and%20cold%20sandwiches%20with%20fresh%20ingredients%2C%20meats%2C%20and%20vegetables.%20Professional%20food%20photography%20with%20warm%20lighting%20highlighting%20the%20textures%20of%20the%20bread%20and%20fillings&width=1200&height=400&seq=boc_hero&orientation=landscape" alt="Nuestros Bocadillos" class="w-full h-64 object-cover object-top">
@@ -586,44 +589,45 @@ Ver Menú Completo
 </div>
 </div>
 <!-- Pizzas -->
-      <div class="col-span-full bg-white rounded-lg shadow-md overflow-hidden product-card" data-category="pizzas">
-<img src="https://readdy.ai/api/search-image?query=A%20beautiful%20artisanal%20pizza%20being%20prepared%20in%20a%20traditional%20wood-fired%20oven.%20The%20scene%20shows%20a%20rustic%20kitchen%20with%20warm%20lighting%2C%20fresh%20ingredients%2C%20and%20the%20pizza%20maker%20crafting%20the%20perfect%20pizza.%20Professional%20food%20photography%20with%20dramatic%20lighting&width=1200&height=400&seq=piz_hero&orientation=landscape" alt="Nuestras Pizzas" class="w-full h-64 object-cover object-top">
-<div class="p-6">
-<h3 class="text-2xl font-semibold text-gray-800 mb-6">Nuestras Pizzas</h3>
-  <div class="flex flex-wrap items-center justify-end gap-4 mb-6 text-gray-700 text-sm md:text-base">
-  <div class="flex items-center gap-1">
-    <span class="font-medium">Ø 32 cm</span>
-    <span class="text-primary font-semibold">10 €</span>
+<div class="col-span-full bg-white rounded-lg shadow-md overflow-hidden product-card" data-category="pizzas">
+  <img src="https://readdy.ai/api/search-image?query=A%20beautiful%20artisanal%20pizza%20being%20prepared%20in%20a%20traditional%20wood-fired%20oven.%20The%20scene%20shows%20a%20rustic%20kitchen%20with%20warm%20lighting%2C%20fresh%20ingredients%2C%20and%20the%20pizza%20maker%20crafting%20the%20perfect%20pizza.%20Professional%20food%20photography%20with%20dramatic%20lighting&width=1200&height=400&seq=piz_hero&orientation=landscape" alt="Nuestras Pizzas" class="w-full h-64 object-cover object-top">
+  <div class="p-6">
+    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Nuestras Pizzas</h3>
+    <div class="flex flex-wrap items-center justify-end gap-4 mb-6 text-gray-700 text-sm md:text-base">
+      <div class="flex items-center gap-1">
+        <span class="font-medium">Ø 32 cm</span>
+        <span class="text-primary font-semibold">10 €</span>
+      </div>
+      <div class="flex items-center gap-1">
+        <span class="font-medium">Ø 40 cm</span>
+        <span class="text-primary font-semibold">16 €</span>
+      </div>
+      <div class="flex items-center gap-1">
+        <span class="font-medium">Ø 45 cm</span>
+        <span class="text-primary font-semibold">19 €</span>
+      </div>
+    </div>
+    <div class="grid gap-4">
+      <!-- Pizza 4 Quesos -->
+      <div class="border-b border-gray-100 pb-4">
+        <div class="flex justify-between items-start">
+          <div>
+            <h4 class="text-lg font-semibold text-gray-800">4 Quesos</h4>
+            <p class="text-gray-600 text-sm">Selección de 4 quesos, tomate y orégano</p>
+          </div>
+        </div>
+      </div>
+      <!-- Pizza Alemana -->
+      <div class="border-b border-gray-100 pb-4">
+        <div class="flex justify-between items-start">
+          <div>
+            <h4 class="text-lg font-semibold text-gray-800">Alemana</h4>
+            <p class="text-gray-600 text-sm">Tomate, queso, salchichas alemanas y mostaza</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="flex items-center gap-1">
-    <span class="font-medium">Ø 40 cm</span>
-    <span class="text-primary font-semibold">16 €</span>
-  </div>
-  <div class="flex items-center gap-1">
-    <span class="font-medium">Ø 45 cm</span>
-    <span class="text-primary font-semibold">19 €</span>
-  </div>
-</div>
-<div class="grid gap-4">
-<!-- Pizza 4 Quesos -->
-<div class="border-b border-gray-100 pb-4">
-<div class="flex justify-between items-start">
-<div>
-<h4 class="text-lg font-semibold text-gray-800">4 Quesos</h4>
-<p class="text-gray-600 text-sm">Selección de 4 quesos, tomate y orégano</p>
-</div>
-</div>
-</div>
-<!-- Pizza Alemana -->
-<div class="border-b border-gray-100 pb-4">
-<div class="flex justify-between items-start">
-<div>
-<h4 class="text-lg font-semibold text-gray-800">Alemana</h4>
-<p class="text-gray-600 text-sm">Tomate, queso, salchichas alemanas y mostaza</p>
-</div>
-</div>
-</div>
-</div>
 </div>
  <!-- Hamburguesas -->
       <div class="col-span-full bg-white rounded-lg shadow-md overflow-hidden product-card hidden" data-category="hamburguesas">
@@ -713,7 +717,8 @@ Ver Menú Completo
 </div>
 </div>
 </div>
-</div>
+  </div>
+  </div>
 </section>
 <!-- Información Útil -->
 <section id="info" class="py-16 bg-[#F5F5DC]">
@@ -778,8 +783,10 @@ Ver Menú Completo
 </a>
 </div>
 </div>
+</div>
 </section>
-</section>
+<section id="info-extra" class="py-16 bg-[#F5F5DC]">
+  <div class="container mx-auto px-4">
 <!-- Footer -->
 <footer class="bg-gray-900 text-white pt-12 pb-6">
 <div class="container mx-auto px-4">
@@ -820,7 +827,7 @@ Ver Menú Completo
 <ul class="space-y-3">
 <li class="flex items-start">
 <i class="ri-map-pin-line mr-3 mt-1"></i>
-<span class="text-gray-400"> Avd Doctor Meca 44, El Puerto de Mazarrón, Spain<br>
+<span class="text-gray-400">Avd Doctor Meca 44, El Puerto de Mazarrón, Spain<br></span>
 </li>
 <li class="flex items-center">
 <i class="ri-phone-line mr-3"></i>
@@ -843,6 +850,8 @@ Ver Menú Completo
 </div>
 </div>
 </footer>
+  </div> <!-- ✅ cierre de container -->
+  </section> 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
 // Menú móvil
@@ -932,45 +941,41 @@ document.addEventListener('DOMContentLoaded', () => {
   el.textContent = `Actualizado: ${day} de ${mesCapital}, ${year}`;
 });
 </script>
-        <script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Obtener todos los tabs y cards
-  const tabs = document.querySelectorAll('.category-tab');
-  const productCards = document.querySelectorAll('.product-card');
-  
-  // Mostrar solo la categoría activa (pizzas por defecto)
-  function showCategory(category) {
-    productCards.forEach(card => {
-      if (card.dataset.category === category) {
-        card.classList.remove('hidden');
-      } else {
-        card.classList.add('hidden');
+        <!-- Scripts -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const tabs = document.querySelectorAll('.category-tab');
+      const productCards = document.querySelectorAll('.product-card');
+
+      function showCategory(category) {
+        productCards.forEach(card => {
+          if (card.dataset.category === category) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+
+        tabs.forEach(tab => {
+          if (tab.dataset.category === category) {
+            tab.classList.add('text-primary', 'border-primary');
+            tab.classList.remove('text-gray-500', 'border-transparent');
+          } else {
+            tab.classList.remove('text-primary', 'border-primary');
+            tab.classList.add('text-gray-500', 'border-transparent');
+          }
+        });
       }
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', function () {
+          const category = this.dataset.category;
+          showCategory(category);
+        });
+      });
+
+      showCategory('pizzas');
     });
-    
-    // Actualizar estado activo de los tabs
-    tabs.forEach(tab => {
-      if (tab.dataset.category === category) {
-        tab.classList.add('text-primary', 'border-primary');
-        tab.classList.remove('text-gray-500', 'border-transparent');
-      } else {
-        tab.classList.remove('text-primary', 'border-primary');
-        tab.classList.add('text-gray-500', 'border-transparent');
-      }
-    });
-  }
-  
-  // Manejar clic en los tabs
-  tabs.forEach(tab => {
-    tab.addEventListener('click', function() {
-      const category = this.dataset.category;
-      showCategory(category);
-    });
-  });
-  
-  // Mostrar pizzas por defecto (ya que es la pestaña activa inicialmente)
-  showCategory('pizzas');
-});
-</script>
+  </script>
 </body>
 </html>
